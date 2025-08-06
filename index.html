@@ -1,0 +1,38 @@
+# Personal Budget Tracker
+
+This web-based budget tracker helps you manage your personal finances for each month. You can record income and expenses, set category spending limits, and see how much of your income remains after accounting for expenses.
+
+## Features
+
+- **Track Income and Expenses**: Log your incoming funds and record expenses in any category you choose.
+- **Category Budgets**: Define monthly spending limits for categories such as groceries, activities, fast food, gasoline, rent, or any other you need. The app will warn you when you approach or exceed a limit.
+- **Monthly Reset**: Data resets automatically at the start of a new month so you can start fresh. You can also reset manually via the “Reset Month Data” button.
+- **Expense History and Deletion**: View a chronological list of your expenses and delete entries if needed.
+- **Local Storage**: All data is stored locally in your browser, so there’s no server required. This makes the app easy to host on GitHub Pages or any static hosting service.
+
+## Getting Started
+
+1. **Clone or download** this repository.
+2. Place the contents of the `budget-app/` directory in the root of your GitHub repository (or any folder you like). The key files are:
+   - `index.html` – the main HTML page.
+   - `style.css` – styles for the interface.
+   - `script.js` – the application logic.
+3. Commit and push the files to GitHub.
+4. To enable GitHub Pages, go to your repository settings, navigate to the **Pages** section, and choose the branch (typically `main`) and directory (if using the root, choose `/`) to publish. Save, and GitHub will build and host your site.
+5. Visit the generated GitHub Pages URL (e.g., `https://yourusername.github.io/your-repo`) to start using your budgeting app.
+
+## Usage Tips
+
+- **Adding Income**: Enter an amount under “Add Income” and click *Add Income*. This increases your available funds for the month.
+- **Adding Expense**: Provide a category, amount, and optional note under “Add Expense”. When you submit, the app checks any set limits for the category and displays a warning if you’re near or over the limit.
+- **Setting Limits**: In “Set Category Limit”, enter the category name and the monthly limit. Submit to create or update the limit. Setting a limit after expenses have been entered will retroactively apply to those expenses.
+- **Category Overview**: The table displays all categories that have either a limit or recorded expenses. Progress bars illustrate how much of each limit is used. Rows turn red when spending exceeds the limit and orange when the spending is close (above 90%).
+- **Resetting**: A new month triggers an automatic reset. You can also click *Reset Month Data* to clear the current month’s data manually.
+
+## Data Privacy
+
+All budgeting data stays in your browser’s local storage. Clearing your browser’s cache or local storage will remove all saved data. No information is sent to any server.
+
+## Customization
+
+Feel free to modify the code to better suit your personal needs. You could extend it to track multiple users, export data, or visualize spending trends using charts.
